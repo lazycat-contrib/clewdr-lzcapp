@@ -1,0 +1,41 @@
+params:
+  - id: clewdr_admin_password
+    type: string
+    name: "clewdr admin password"
+    description: "clewdr admin password you want to set"
+
+  - id: clewdr_api_key
+    type: string
+    name: "clewdr api key"
+    description: "the clewdr api key you want to set when access using api"
+  
+  - id: claude_session_keys
+    type: string
+    name: "Claude session keys"
+    description: "the claude session keys,muti keys should join with comma"
+    optional: true
+
+  - id: gemini_api_keys
+    type: string
+    name: "gemini keys"
+    description: "the gemini api keys,muti keys should join with comma"
+    optional: true
+  
+
+locales:
+  zh:
+    clewdr_admin_password:
+      name: "前端登录密码"
+      description: "您通过web登录时，使用的登录密码"
+    
+    clewdr_api_key:
+      name: "API访问密钥"
+      description: "您要设置的API访问密钥,用于API访问鉴权"
+
+    claude_session_keys:
+      name: "Claude session Key"
+      description: "您要设置的Claude Session Key，多个key使用英文逗号分隔"
+
+    gemini_api_keys:
+      name: "Google Gemini API密钥"
+      description: "您要设置的Google Gemini API密钥，多个密钥使用英文逗号分隔"

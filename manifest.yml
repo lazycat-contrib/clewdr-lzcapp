@@ -1,0 +1,24 @@
+name: Clewdr
+package: lazycat.community.app.clewdr
+version: 0.11.3
+min_os_version: 1.3.8
+description: "专为 Claude（Claude.ai、Claude Code）和 Google Gemini（AI Studio、Vertex AI）设计的现代化高性能 LLM 代理服务器"
+homepage: https://github.com/Xerxes-2/clewdr
+author: Xerxes-2
+application:
+  subdomain: clewdr
+  background_task: true
+  public_path:
+    - /
+  routes:
+    - /=http://clewdr:8484/
+services:
+  clewdr:
+    image: registry.lazycat.cloud/czyt/xerxes-2/clewdr:1d882de78d60cdc3
+    environment:
+      - CLEWDR_ADMIN_PASSWORD="{{ .U.clewdr_admin_password }}"     
+      - CLEWDR_PASSWORD="{{ .U.clewdr_api_key }}"      
+      - CLEWDR_COOKIE_ARRAY=[{{ .U.claude_session_keys }}] 
+      - CLEWDR_GEMINI_KEYS=[{{ .U.gemini_api_keys }}] 
+      - CLEWDR_MAX_RETRIES=10              
+      - CLEWDR_CACHE_RESPONSE=0          
