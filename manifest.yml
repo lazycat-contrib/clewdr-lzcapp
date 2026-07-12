@@ -7,12 +7,12 @@ application:
     - /=http://clewdr:8484/
 services:
   clewdr:
-    # upstream: ghcr.io/xerxes-2/clewdr:v0.11.3
-    image: registry.lazycat.cloud/czyt/xerxes-2/clewdr:1d882de78d60cdc3
+    # upstream: ghcr.io/xerxes-2/clewdr:v0.12.25
+    image: registry.lazycat.cloud/czyt/xerxes-2/clewdr:50fdec40616a4a37
     environment:
-      - CLEWDR_ADMIN_PASSWORD="{{ .U.clewdr_admin_password }}"     
-      - CLEWDR_PASSWORD="{{ .U.clewdr_api_key }}"      
-      - CLEWDR_COOKIE_ARRAY=[{{ .U.claude_session_keys }}] 
-      - CLEWDR_GEMINI_KEYS=[{{ .U.gemini_api_keys }}] 
-      - CLEWDR_MAX_RETRIES=10              
-      - CLEWDR_CACHE_RESPONSE=0          
+      - CLEWDR_ADMIN_PASSWORD="{{ .U.clewdr_admin_password }}"
+      - CLEWDR_PASSWORD="{{ .U.clewdr_api_key }}"
+      - CLEWDR_COOKIE_ARRAY=[{{ .U.claude_session_keys }}]
+      - CLEWDR_GEMINI_KEYS=[{{ .U.gemini_api_keys }}]
+      - CLEWDR_MAX_RETRIES=10
+      - CLEWDR_CACHE_RESPONSE=0

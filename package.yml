@@ -1,11 +1,10 @@
 package: lazycat.community.app.clewdr
-version: 0.11.3
+version: 0.12.25
 name: Clewdr
 description: "专为 Claude（Claude.ai、Claude Code）和 Google Gemini（AI Studio、Vertex AI）设计的现代化高性能 LLM 代理服务器"
 min_os_version: 1.5.0
 homepage: https://github.com/Xerxes-2/clewdr
 author: Xerxes-2
-
 locales:
   zh:
     name: "Clewdr"
@@ -13,4 +12,3 @@ locales:
   en:
     name: "Clewdr"
     description: "A modern high-performance LLM reverse proxy for Claude and Google Gemini"
-
