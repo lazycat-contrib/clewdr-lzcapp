@@ -1,5 +1,5 @@
 package: lazycat.community.app.clewdr
-version: 0.12.25
+version: 0.12.26
 name: Clewdr
 description: "专为 Claude（Claude.ai、Claude Code）和 Google Gemini（AI Studio、Vertex AI）设计的现代化高性能 LLM 代理服务器"
 min_os_version: 1.5.0
