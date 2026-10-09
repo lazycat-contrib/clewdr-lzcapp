@@ -1,4 +1,5 @@
 package: lazycat.community.app.clewdr
+license: AGPL-3.0
 version: 0.13.5
 name: Clewdr
 description: "专为 Claude（Claude.ai、Claude Code）和 Google Gemini（AI Studio、Vertex AI）设计的现代化高性能 LLM 代理服务器"
