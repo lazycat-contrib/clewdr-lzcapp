@@ -7,8 +7,8 @@ application:
     - /=http://clewdr:8484/
 services:
   clewdr:
-    # upstream: ghcr.io/xerxes-2/clewdr:v0.13.7
-    image: registry.lazycat.cloud/czyt/xerxes-2/clewdr:fac7edeaedaaeb97
+    # upstream: ghcr.io/xerxes-2/clewdr:v0.13.8
+    image: registry.lazycat.cloud/czyt/xerxes-2/clewdr:cf517a531c328e9b
     environment:
       - CLEWDR_ADMIN_PASSWORD="{{ .U.clewdr_admin_password }}"
       - CLEWDR_PASSWORD="{{ .U.clewdr_api_key }}"
